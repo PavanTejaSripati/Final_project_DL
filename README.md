@@ -33,15 +33,9 @@ Real time testing: This code segment captures real-time video frames from the we
 All the models are being saved in the Hierarchical Data Format (HDF5), which is a file format commonly used for storing large amounts of numerical data. The .h5 extension indicates that the file is in HDF5 format.
 
 
-
 ## Contributing
 
-We welcome contributions! Please follow the guidelines in CONTRIBUTING.md.
-
-## Credits
-
-- John Doe (@johndoe) - Created the initial version.
-- Jane Smith - Provided valuable feedback and suggestions.
+We welcome contributions!
 
 ## Contact
 

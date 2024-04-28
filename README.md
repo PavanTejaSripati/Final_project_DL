@@ -26,7 +26,7 @@ Now it's time to train and test the data. This code captures video frames in rea
 cap.release() cv2.destroyAllWindows() --> This ensures that resources are properly released and all windows are closed before the programme exits.
 After this, you can run the codes of LSTM, CNN, and TCN, and then you can continue with real-time testing.
 
-Real-time testing is done through the model LSTM, and for CNN and TCN,  we have created models and tested them with accuracy and F1 scores.
+Real-time testing can be done through the model LSTM, and for CNN and TCN,  we have created models and calculated accuracy and F1 scores 
 
 LSTM model Real-time testing: This code segment captures real-time video frames from the webcam (cv2.VideoCapture(0)) and processes them using the MediaPipe Holistic model (mp_holistic.Holistic) to detect human poses and gestures.
 

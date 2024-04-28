@@ -21,12 +21,14 @@ Code will extract the key points where the extract_keypoints function encapsulat
 
 This code sets up a directory structure to organise video frame data, with separate directories for each action and each sequence of frames within those actions. This organisation facilitates storing and accessing the video data for further processing or analysis.
 
-Now it's time to test and train the data. This code captures video frames in real-time, detects landmarks using the MediaPipe Holistic model, and saves the extracted keypoints as NumPy arrays in a structured directory hierarchy for each action sequence.
+Now it's time to train and test the data. This code captures video frames in real-time, detects landmarks using the MediaPipe Holistic model, and saves the extracted keypoints as NumPy arrays in a structured directory hierarchy for each action sequence.
 
 cap.release() cv2.destroyAllWindows() --> This ensures that resources are properly released and all windows are closed before the programme exits.
-After this you can run the codes of LSTM,CNN,TCN then you can continue with real time testing.
+After this, you can run the codes of LSTM, CNN, and TCN, and then you can continue with real-time testing.
 
-Real-time testing: This code segment captures real-time video frames from the webcam (cv2.VideoCapture(0)) and processes them using the MediaPipe Holistic model (mp_holistic.Holistic) to detect human poses and gestures.
+Real-time testing is done through the model LSTM, and for CNN and TCN,  we have created models and tested them with accuracy and F1 scores.
+
+LSTM model Real-time testing: This code segment captures real-time video frames from the webcam (cv2.VideoCapture(0)) and processes them using the MediaPipe Holistic model (mp_holistic.Holistic) to detect human poses and gestures.
 
 All the models are being saved in the Hierarchical Data Format (HDF5), which is a file format commonly used for storing large amounts of numerical data. The.h5 extension indicates that the file is in HDF5 format.
 
